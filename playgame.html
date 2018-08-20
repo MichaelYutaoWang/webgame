@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<title>Play Game</title>
+<link rel="stylesheet" href="css/project2.css">
+<script src="js/jslib1.js"></script>
+<script src="js/playgame.js"></script>
+
+</head>
+
+<body>
+<br>
+
+<table>
+<tr>
+<td>
+&nbsp;&nbsp;&nbsp;<button style="height:32;background-color:green;color:yellow;" onclick="startGame()"><b>Replay</b></button>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<img style="height:24" src="images/soundvolume.png" /><input type="range" min="0" max="100" value="100" id="sound_volume" onchange="changeSoundVolume()">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="show_information"></label>
+</td></tr>
+<tr><td>
+<div>
+    <canvas id="playgame" width="1500" height="600" style="border:3px solid darkblue;background-image:url('images/bg.png');">
+        Your brower doesen't support the canvas! Try another brower please.
+    </canvas>
+</div>
+</td></tr>
+</table>
+<br><label id="debug_information"></label><br>
+
+<script type="text/javascript">
+
+function changeSoundVolume()
+{
+    var volume = document.getElementById("sound_volume").value / 100.0;
+    setGameSoundVolume(volume);
+
+}
+
+var mycanvas = document.getElementById("playgame");
+setCanvas(mycanvas);
+startGame();
+
+</script>
+
+</body>
+</html>

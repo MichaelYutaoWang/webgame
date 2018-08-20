@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<title>Web Game (Mr. X collects oranges.)</title>
+<link rel="stylesheet" href="css/project2.css">
+</head>
+
+<body>
+<table id="outsideBox">
+<tr><td>
+    <div style="align:center">Milford Bay Cinema</div>
+</td></tr>
+</table>
+
+<script type="text/javascript">
+    function js_step(page_number) {
+        var fw = document.getElementById("js_iframe");
+        if (page_number == 1) {
+            fw.src = "bookmovie.html";
+        } else if (page_number == 2) {
+            fw.src = "playgame.html";
+        }
+    }
+</script>
+
+<table style="margin:0;padding:0;" width="100%">
+<tr>
+    <td align="center"><button class="partbtn" onclick="js_step(1)">Book Movie</button></td>
+    <td align="center"><button class="partbtn" onclick="js_step(2)">Play Game</button></td>
+</tr>
+<tr>
+<td colspan="3">
+    <iframe id="js_iframe" style="border:1px solid grey;" width=100% height=800></iframe>
+    <script>js_step(2)</script>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

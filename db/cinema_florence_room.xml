@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CinemaRoom>
+    <Row>8</Row>
+    <LeftColumn>6</LeftColumn>
+    <RightColumn>5</RightColumn>
+    <Price startRow="1" endRow="2">20</Price>
+    <Price startRow="3" endRow="5">22</Price>
+    <Price startRow="6" endRow="8">25</Price>
+	<SeatInvalid>
+        <Seat row="1" col="1" />
+        <Seat row="1" col="11" />
+	</SeatInvalid>
+	<SeatBooked>
+        <Seat row="2" col="5" />
+        <Seat row="2" col="6" />
+        <Seat row="4" col="3" />
+        <Seat row="4" col="4" />
+        <Seat row="4" col="5" />
+        <Seat row="4" col="6" />
+        <Seat row="7" col="2" />
+        <Seat row="1" col="8" />
+        <Seat row="3" col="7" />
+        <Seat row="3" col="8" />
+        <Seat row="3" col="9" />
+        <Seat row="3" col="10" />
+        <Seat row="6" col="8" />
+        <Seat row="6" col="9" />
+	</SeatBooked>
+</CinemaRoom>

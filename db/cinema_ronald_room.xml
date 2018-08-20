@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CinemaRoom>
+    <Row>10</Row>
+    <LeftColumn>5</LeftColumn>
+    <RightColumn>5</RightColumn>
+    <Price startRow="1" endRow="2">20</Price>
+    <Price startRow="3" endRow="5">22</Price>
+    <Price startRow="6" endRow="10">25</Price>
+	<SeatInvalid>
+        <Seat row="1" col="1" />
+        <Seat row="2" col="1" />
+        <Seat row="9" col="1" />
+        <Seat row="10" col="1" />
+        <Seat row="1" col="10" />
+        <Seat row="2" col="10" />
+        <Seat row="9" col="10" />
+        <Seat row="10" col="10" />
+	</SeatInvalid>
+	<SeatBooked>
+        <Seat row="2" col="2" />
+        <Seat row="2" col="3" />
+        <Seat row="2" col="4" />
+        <Seat row="2" col="5" />
+        <Seat row="4" col="3" />
+        <Seat row="4" col="4" />
+        <Seat row="4" col="5" />
+        <Seat row="5" col="4" />
+        <Seat row="6" col="4" />
+        <Seat row="6" col="5" />
+        <Seat row="7" col="2" />
+        <Seat row="7" col="4" />
+        <Seat row="7" col="5" />
+        <Seat row="3" col="6" />
+        <Seat row="5" col="6" />
+        <Seat row="5" col="7" />
+        <Seat row="6" col="6" />
+        <Seat row="6" col="7" />
+	</SeatBooked>
+</CinemaRoom>
